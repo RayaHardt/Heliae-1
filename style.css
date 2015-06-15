@@ -849,15 +849,29 @@ ul.partners li img:hover {
 .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
     border: none;
     background: none;
-    font-size: 25px;
+    font-size: 36px;
     color: #6c6c6c;
     float: right;
     margin-top: -80px;
     font-weight: 100;
 }
 
-
-
+label[for="input_1_5"] {
+    width: 300px;
+    height: 50px;
+    font-size: 36px;
+    color: #6c6c6c;
+    background-image: url('/wp-content/uploads/2015/06/arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-family: 'TradeGothicLT-Light';
+    font-weight: 100;
+}
+#input_1_5 {
+    display: none;
+}
 
 
 
@@ -968,6 +982,7 @@ h2.show-old-year-news {
     margin-bottom: 80px;
     border-bottom: solid 1px #e6e6e6;
     cursor: pointer;
+    font-size: 24px;
 }
 .more-less-less {
     display: none;

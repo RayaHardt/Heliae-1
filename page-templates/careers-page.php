@@ -11,13 +11,7 @@ Template Name: Careers
         <div class="content">
 
             <?php include (get_theme_root() .'/heliae/includes/scroll-page-header-text.php'); ?>
-            
-            <div class="the-content">
-                
-                <?php echo the_content(); ?>
-                
-            </div>
-            
+
             <div class="the-content">
 
                 <ul class="careers">
@@ -46,6 +40,8 @@ Template Name: Careers
                             <div class="read-more" id="read-more-<?php echo $careers_i; ?>">
                             
                                 <?php echo $read_more; ?>
+                                
+                                <p class="contact-modal"><a>Submit your resume</a></p>
                             
                             </div>
 
@@ -74,8 +70,45 @@ Template Name: Careers
             </div>
 
         </div>
+        
+            <div id="contact-form-container">
+    
+                <div id="contact-form">
 
-    </div>		
+                    <div id="contact-modal-close"><i class="fa fa-times fa-2x"></i></div>
+
+                    <?php the_content(); ?>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+        $(document).ready(function(){
+
+            $('.contact-modal').click(function( event ) {
+                event.preventDefault();
+                $('#contact-form-container').show();
+            });
+
+            $('#contact-modal-close').click(function( event ) {
+                event.preventDefault();
+                $('#contact-form-container').hide();
+            });
+
+        });
+        </script>
+
+    </div>
+
+<style>
+p.contact-modal {
+text-align: right;
+    cursor: pointer;
+}
+</style>
 
 <?php endwhile; endif; ?>
 

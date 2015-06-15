@@ -28,7 +28,7 @@ Template Name: Reading Room
             
             <?php if($news_year != date("Y")){ ?>
             
-            <h2 id="show-old-year-news-<?php echo $news_year; ?>" class="show-old-year-news"><span class="more-less-more" id="more-less-more-<?php echo $news_year; ?>"><i class="fa fa-plus-square"></i> Show <?php echo $news_year; ?> Links</span><span class="more-less-less" id="more-less-less-<?php echo $news_year; ?>"><i class="fa fa-minus-square"></i> Hide <?php echo $news_year; ?> Links</span></h2>
+            <h2 id="show-old-year-news-<?php echo $news_year; ?>" class="show-old-year-news"><span class="more-less-more" id="more-less-more-<?php echo $news_year; ?>"><i class="fa fa-plus"></i> Archive <?php echo $news_year; ?></span><span class="more-less-less" id="more-less-less-<?php echo $news_year; ?>"><i class="fa fa-minus"></i> Archive <?php echo $news_year; ?></span></h2>
             
                 <div class="old-year-news" id="old-year-news-<?php echo $news_year; ?>">
             
