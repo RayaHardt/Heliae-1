@@ -1,0 +1,11 @@
+/* Navigation
+-------------------------------------------------------------------------------*/
+nav {
+    background: rgba(1,1,1,0.75);
+} 
+#nav li a {
+    color: #ffffff;
+}
+#nav li a:hover, #nav li a.active {
+    background: rgba(188,189,190,0.6);
+}
